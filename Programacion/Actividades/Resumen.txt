@@ -1,0 +1,90 @@
+Semana del 08-11-2017 al 15-11-2017
+Linea: 1
+Turno: 1
+Total de productos de la semana: 27
+Veces que se detuvo la línea: 27
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 1
+Turno: 2
+Total de productos de la semana: 31
+Veces que se detuvo la línea: 31
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 1
+Turno: 3
+Total de productos de la semana: 31
+Veces que se detuvo la línea: 31
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 2
+Turno: 1
+Total de productos de la semana: 7
+Veces que se detuvo la línea: 7
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 2
+Turno: 2
+Total de productos de la semana: 7
+Veces que se detuvo la línea: 7
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 2
+Turno: 3
+Total de productos de la semana: 7
+Veces que se detuvo la línea: 7
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 3
+Turno: 1
+Total de productos de la semana: 7
+Veces que se detuvo la línea: 7
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 3
+Turno: 2
+Total de productos de la semana: 29
+Veces que se detuvo la línea: 39
+Día en que más veces se detuvo la línea: 3° dia de la semana
+
+Linea: 3
+Turno: 3
+Total de productos de la semana: 7
+Veces que se detuvo la línea: 7
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 4
+Turno: 1
+Total de productos de la semana: 35
+Veces que se detuvo la línea: 35
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 4
+Turno: 2
+Total de productos de la semana: 35
+Veces que se detuvo la línea: 35
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 4
+Turno: 3
+Total de productos de la semana: 35
+Veces que se detuvo la línea: 35
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 5
+Turno: 1
+Total de productos de la semana: 700
+Veces que se detuvo la línea: 14
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 5
+Turno: 2
+Total de productos de la semana: 700
+Veces que se detuvo la línea: 14
+Día en que más veces se detuvo la línea: 1° dia de la semana
+
+Linea: 5
+Turno: 3
+Total de productos de la semana: 700
+Veces que se detuvo la línea: 14
+Día en que más veces se detuvo la línea: 1° dia de la semana
