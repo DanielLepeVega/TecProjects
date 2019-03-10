@@ -1,0 +1,408 @@
+Repaso poo
+
+-Para poner un número random
+	1.- importar java.util.Random;
+	2.- declarar el valor de tipo Random 
+		Random rrnd=new Random();
+	3.- convertirlo a int
+		int rnd=rrnd.nextInt(3);
+		serán valores del 0 al 2
+
+-Para poner un cuadro de input
+	1.- importar javax.swing.*;
+	2.- declarar valor String
+		String strnum=JOptionPane.showInputDialog("Mensaje en cuadrito");
+	3.- convertirlo al valor que deseas usar
+		int num=Integer.parseInt(strnum);
+
+-Para validar entrada de números
+		import javax.swing.*;
+		
+public class PruebaValidarNum{
+	
+
+
+		public static void main(String [] args){
+
+			String strx,
+		       
+				stry;
+
+			strx = JOptionPane.showInputDialog("Ingresa tu primer numero");
+
+			stry = JOptionPane.showInputDialog("Ingresa tu segundo numero");
+
+			int x = Integer.parseInt(strx);
+
+			int y = Integer.parseInt(stry);
+		
+			while (x<0){
+
+				strx = JOptionPane.showInputDialog("Ingresa solo numeros positivos enteros.\nIngresa tu primer numero");
+
+				x = Integer.parseInt(strx);
+
+			}
+
+			while (y<0){
+
+				stry = JOptionPane.showInputDialog("Ingresa solo numeros positivos enteros.\nIngresa tu segundo numero");
+
+				y = Integer.parseInt (stry);
+
+			}
+
+			System.out.println (x+y);
+
+
+			}
+		
+
+
+
+
+}
+
+
+
+-Para convertir de un tipo de valor a otro
+	1.-no necesitas importar librería
+	2.- tener declarado el valor que deseas convertir
+		String strnumm="2";
+	3.- declarar el valor al que deseas convertir y usar parse
+		int num=Integer.parseInt(strnumm);
+
+-Para poner un cuadro de diálogo
+	1.-importar javax.swing.*; 
+	2.-dar la orden del mensaje
+		JOptionPane.showMessageDialog(null,"mensaje");
+
+-Para declarar un arreglo
+	1.-declarar que tipo de arreglo quieres + []
+		String[] 
+	2.-escribir el nombre del arreglo
+		String[] palabras;
+	3.-escribir de que tamaño es el arreglo
+		String[] palabras = new [tamaño del arreglo];
+	otra forma
+		String[] palabras;
+		palabras = new String[tamaño del arreglo];
+	ejemplo doble
+		int [][] c;
+		c=new int [2][];
+	
+		c[0]=new int[5];
+		c[1]=new int[3];
+		c[0][2]=9;
+ 
+                 -  -  9  -  -
+		 -  -  -
+		
+-Para escribir lo del main
+	En el main
+		String strx=args[0];
+		int x=Integer.parseInt(strx);
+		String stry=args[1];
+		int y=Integer.parseInt(stry);
+
+		String[][] nuevoa;
+		nuevoa= new String[x][y];
+		int k=2;
+		for(int i=0; i<x; i++){
+			for(int j=0; j<y; j++){
+				nuevoa[i][j]=args[k];
+				k++;
+			}
+		}
+		ea.imprime(nuevoa);	
+	
+-Ejemplo static
+	public class EjemploStatic{
+	
+		private int x;
+	
+		private static int y;
+
+	
+
+		public EjemploStatic(int x, int y){
+		
+			this.x = x;
+		
+			this.y = y;
+	
+		}
+
+
+	
+		public static int metodo(){
+	
+			//	return this.x*this.y:    ESTO NO SE PUEDE, UN METODO DE CLASE NO PUEDE LLAMAR A VARIABLES DE INSTANCIAS.
+
+			return EjemploStatic.y;
+	
+		}
+
+
+		
+public static void main (String[] args){
+
+			EjemploStatic 	a=new EjemploStatic(1,2),	
+
+			     		b=new EjemploStatic(3,4),
+
+			     	 	c=new EjemploStatic(5,6);
+
+
+		
+			System.out.println(a.x + " " + a.y);
+
+			System.out.println(b.x + " " + b.y);
+
+			System.out.println(c.x + " " + c.y);
+
+
+		
+	System.out.println("Imprimiendo desde el metodo: " + metodo());
+
+	
+		}
+	
+
+
+
+
+}
+
+-Un objeto en java es cualquier ente que encontramos en el dominio
+ del problema de nuestra realidad que tiene atributos (Estado)
+ que pueden ser públicos o privados,
+ tiene métodos(Comportamiento)
+ que también pueden ser públicos o privados.
+ + Un programa está organizado en base de Objetos.
+ + Un objeto es una instancia de la clase y es un elemento
+ independiente con características propias (atributos)
+ + Un objeto es la instancia de una clase
+Ejemplo Clase:Pantalla
+Instancias de la clase Pantalla
+Atributos Marca Año Color Material
+Métodos Encender() Apagar() Brillo() Volumen()
+
+-Una clase es el modelo que define como está conformado un Objeto
+ y a través de ella los objetos son creados
+
+-Un atributo en java tiene tipo ej. int String
+ puede ser público cuando todas las clases pueden acceder a él,
+ es privado (en un archivo) cuando solo se puede acceder a él
+ en la misma clase
+
+-Un método en java puede regresar algo indicádolo con un tipo
+ ej. String int
+ o puede que no regrese nada con un void
+ ej. void
+
+-Un constructor son los métodos que se utilizan para crear 
+ nuevos objetos
+ +Su principal función es la de reservar la memoria necesaria
+ para almacenar el objeto e inicializar correctamente los
+ atributos de un objeto
+ +Los constructores siempre tienen el mismo nombre de la clase 
+ y nunca devuelven nada
+ +El constructor se llama junto con el operador new y sólo
+ se puede llamar para crear un nuevo objeto.
+
+-Un setter es un método que le da un valor a un atributo de 
+ tu objeto
+ +No regresa nada
+
+-Un getter es un método que te regresa el valor de un atributo de
+ tu objeto
+ +Si regresa
+
+-Un printer es un método que te imprime el valor que le pidas
+ +No regresa nada
+ +Imprime a pantalla
+
+-Un makecopy no regresa nada, sólo copia los valores de un
+ objeto a otro
+
+-Un getCopy regresa un objeto nuevo con los valores que tenga
+
+-Para hacer un toString
+	Es la magia para que cuando imprimas un objeto te salgan los valores en vez de la dirección del objeto
+	public String toString(){
+		return Naipe.strValor[this.valor] + " de " + Naipe.strPalo[this.palo];
+	}
+
+
+-Ejemplo de clase con objeto y clase con main
+
+public class Clock{
+	private int hr,
+		min,
+		sec;
+		
+	private String cd;
+
+	public Clock(){
+		this(12,0,0,"Guadalajara");
+	}
+
+	public Clock(int hr, int min, int sec, String cd){
+		this.setTime(hr,min,sec);
+		this.cd=cd;
+	}
+
+	public void setTime(int hr, int min, int sec){
+		if (hr>=0 && hr<24){
+			this.hr=hr;
+		}
+		else{
+			this.hr=12;
+		}
+		if (min>=0 && min<60){
+			this.min=min;
+		}
+		else{
+			this.min=0;
+		}
+		if (sec>=0 && sec<60){
+			this.sec=sec;
+		}
+		else{
+			this.sec=0;
+		}
+	}
+
+	public void setCiudad(String cd){
+		this.cd=cd;
+	}
+	
+	public int getHours(){
+		return this.hr;	
+	}
+
+	public int getMinutes(){
+		return this.min;
+	}
+
+	public int getSeconds(){
+		return this.sec;
+	}
+
+	public String getCiudad(){
+		return this.cd;
+	}
+
+	public void printTime(){
+		if(this.hr<10){
+			System.out.print("0"+this.hr+":");
+		}
+		else{
+			System.out.print(this.hr+":");
+		}
+		if(this.min<10){
+			System.out.print("0"+this.min+":");
+		}
+		else{
+			System.out.print(this.min+":");
+		}
+		if(this.sec<10){
+			System.out.println("0"+this.sec);
+		}
+		else{
+			System.out.println(this.sec);
+		}
+	}
+
+	public String toString(){
+		String resultado=this.cd+""+"\t";
+		if(this.hr<10){
+			resultado+="0"+this.hr+":";
+		}
+		else{
+			resultado+=this.hr+":";
+		}
+		if(this.min<10){
+			resultado+="0"+this.min+":";
+		}
+		else{
+			resultado+=this.min+":";
+		}
+		if(this.sec<10){
+			resultado+="0"+this.sec;
+		}
+		else{
+			resultado+=this.sec;
+		}
+		return resultado;
+	}
+	public void incrementHours(){
+		this.hr=++this.hr%24;
+	}
+	
+	public void incrementMinutes(){
+		this.min=++this.min%60;
+		if(this.min==0){
+			this.incrementHours();
+		}
+	}
+
+	public void incrementSeconds(){
+		this.sec=++this.sec%60;
+		if(this.sec==0){
+			this.incrementMinutes();
+		}
+	}
+	
+	public boolean equals(Clock reloj){
+		return this.hr==reloj.getHours() && this.min==reloj.getMinutes() &&
+this.sec==reloj.getSeconds();
+	}
+
+	public void makeCopy(Clock reloj){
+	//	this.setTime(reloj.hr, reloj.min, reloj.sec);
+		this.hr=reloj.hr;
+		this.min=reloj.min;
+		this.sec=reloj.sec;
+		this.cd=reloj.cd;
+	}
+
+	public Clock getCopy(){
+		return new Clock(this.hr,this.min,this.sec,this.cd);
+	}	
+}
+
+public class UsaClock{
+	public static void main(String[] args){
+		Clock gda=new Clock(9,7,20);
+		Clock tij=new Clock(7,7,20);
+		Clock ny=new Clock(10,7,20);
+		Clock lon=new Clock(23,59,59);
+		lon.incrementHours();
+		lon.incrementSeconds();
+		
+
+		gda.printTime();
+		tij.printTime();
+		ny.printTime();
+		lon.printTime();
+
+
+		if(gda.equals(tij)){
+			System.out.println("La hora en Gda y Tij son la misma");
+		}
+		else{
+			System.out.println("La hora en Gda y Tij NO son la misma");
+		}
+
+		gda.makeCopy(tij);
+		gda.printTime();
+
+		Clock cdmx=gda.getCopy();
+		cdmx.printTime();
+	}
+}
+
+
+ 
